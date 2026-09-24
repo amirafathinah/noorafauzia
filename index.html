@@ -242,132 +242,110 @@
 
         <!-- HERO SECTION -->
         <section id="hero" class="relative pt-12 pb-20 lg:py-24 px-4 lg:px-10 overflow-hidden">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Hero Left Content -->
-                <div class="lg:col-span-7 flex flex-col gap-6 text-left">
-                    
-                    <!-- Availability Pill -->
-                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card border-cyan-400/30 w-fit shadow-[0_0_15px_rgba(56,189,248,0.2)] animate-bounce">
-                        <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
-                        <span class="text-xs font-semibold text-cyan-300 tracking-wide uppercase">Open for Strategic Roles & Collaborations</span>
-                    </div>
-
-                    <!-- Main Headline -->
-                    <div class="space-y-2">
-                        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-slate-100">
-                            Noora Fauzia <br>
-                            <span class="bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-200 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(56,189,248,0.4)]">
-                                Ghazali
-                            </span>
-                        </h1>
-                        <p class="text-lg sm:text-xl font-medium text-cyan-300 tracking-wide pt-1">
-                            Strategic Communications, Branding & Public Relations Specialist
-                        </p>
-                    </div>
-
-                    <!-- Pitch Paragraph -->
-                    <p class="text-slate-300 text-base leading-relaxed max-w-2xl font-light">
-                        Crafting impactful brand narratives, executing integrated PR campaigns, and empowering communities through creative direction. Specialized in bridging multi-stakeholder messaging into authentic, result-driven digital strategies.
-                    </p>
-
-                    <!-- CTA Group -->
-                    <div class="flex flex-wrap items-center gap-4 pt-2">
-                        <a href="#projects" class="px-7 py-3.5 rounded-xl font-bold text-slate-950 bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-400 bg-[length:200%_auto] hover:bg-right transition-all duration-500 shadow-[0_0_30px_rgba(56,189,248,0.5)] hover:shadow-[0_0_40px_rgba(56,189,248,0.8)] hover:scale-105 active:scale-95 flex items-center gap-2">
-                            <span>Explore Selected Projects</span>
-                            <i class="fa-solid fa-arrow-right text-sm"></i>
-                        </a>
-
-                        <a href="#kreathos" class="px-6 py-3.5 rounded-xl font-semibold text-slate-200 glass-card hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-cyan-400"></i>
-                            <span>KREATHOS Initiative</span>
-                        </a>
-                    </div>
-
-                    <!-- Quick Metrics Strip -->
-                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-cyan-500/20">
-                        <div class="glass-card p-3.5 rounded-xl text-center glass-hover">
-                            <div class="font-display font-extrabold text-2xl lg:text-3xl text-cyan-300">15+</div>
-                            <div class="text-[11px] text-slate-400 uppercase font-medium mt-1">Campaigns Managed</div>
-                        </div>
-                        <div class="glass-card p-3.5 rounded-xl text-center glass-hover">
-                            <div class="font-display font-extrabold text-2xl lg:text-3xl text-sky-400">98%</div>
-                            <div class="text-[11px] text-slate-400 uppercase font-medium mt-1">Satisfaction Rate</div>
-                        </div>
-                        <div class="glass-card p-3.5 rounded-xl text-center glass-hover">
-                            <div class="font-display font-extrabold text-2xl lg:text-3xl text-cyan-300">100%</div>
-                            <div class="text-[11px] text-slate-400 uppercase font-medium mt-1">Target Engagement</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hero Right: Photo Box (Updated with Image) -->
-<div class="lg:col-span-5 flex justify-center">
-    <div class="relative w-full max-w-md aspect-[4/5] glass-card rounded-3xl p-4 glass-hover glow-border group overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Frame Container for Image -->
-        <div class="w-full h-full rounded-2xl border-2 border-cyan-400/30 bg-slate-900/60 flex items-center justify-center relative overflow-hidden group-hover:border-cyan-300 transition-colors">
+        <!-- Hero Left Content -->
+        <div class="lg:col-span-7 flex flex-col gap-6 text-left">
             
-            <!-- Loading Indicator (Will hide after image loads) -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-slate-400 opacity-100 group-has-[img[src]]:opacity-0 transition-opacity">
-                 <div class="w-16 h-16 rounded-full border-4 border-slate-700 border-t-cyan-400 animate-spin mb-4"></div>
-                 <p class="font-mono text-xs">Memuat Foto Fauzia...</p>
+            <!-- Availability Pill -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card border-cyan-400/30 w-fit shadow-[0_0_15px_rgba(56,189,248,0.2)] animate-bounce">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+                <span class="text-xs font-semibold text-cyan-300 tracking-wide uppercase">Open for Strategic Roles & Collaborations</span>
             </div>
 
-            <!-- THE IMAGE: fauzia.png -->
-            <!-- We use object-cover to make sure the image fills the frame without distorting -->
-            <img 
-                src="fauzia.png" 
-                alt="Foto Fauzia" 
-                class="absolute inset-0 w-full h-full object-cover object-top rounded-2xl opacity-0 group-has-[img[src]]:opacity-100 transition-opacity duration-500"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
-
-            <!-- Fallback Content (Displays if image fails to load) -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-red-400 hidden">
-                 <i class="fa-solid fa-image-slash text-4xl mb-3"></i>
-                 <p class="font-bold">Gagal Memuat Gambar</p>
-                 <p class="text-xs text-slate-400 mt-1">Pastikan file 'fauzia.png' berada di folder yang sama.</p>
+            <!-- Main Headline -->
+            <div class="space-y-2">
+                <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-slate-100">
+                    Noora Fauzia <br>
+                    <span class="bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-200 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(56,189,248,0.4)]">
+                        Ghazali
+                    </span>
+                </h1>
+                <p class="text-lg sm:text-xl font-medium text-cyan-300 tracking-wide pt-1">
+                    Strategic Communications, Branding & Public Relations Specialist
+                </p>
             </div>
 
-            <!-- Ambient Light Beam / Overlay (Kept from original design) -->
-            <div class="absolute inset-0 bg-gradient-to-b from-sky-500/5 via-transparent to-cyan-500/10 opacity-30 group-hover:opacity-70 transition-opacity pointer-events-none rounded-2xl"></div>
+            <!-- Pitch Paragraph -->
+            <p class="text-slate-300 text-base leading-relaxed max-w-2xl font-light">
+                Crafting impactful brand narratives, executing integrated PR campaigns, and empowering communities through creative direction. Specialized in bridging multi-stakeholder messaging into authentic, result-driven digital strategies.
+            </p>
 
-            <!-- Optional Corner Decoration (Added for tech feel) -->
-            <div class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-cyan-400 opacity-70"></div>
-            <div class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-cyan-400 opacity-70"></div>
-        
+            <!-- CTA Group -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+                <a href="#projects" class="px-7 py-3.5 rounded-xl font-bold text-slate-950 bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-400 bg-[length:200%_auto] hover:bg-right transition-all duration-500 shadow-[0_0_30px_rgba(56,189,248,0.5)] hover:shadow-[0_0_40px_rgba(56,189,248,0.8)] hover:scale-105 active:scale-95 flex items-center gap-2">
+                    <span>Explore Selected Projects</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+
+                <a href="#kreathos" class="px-6 py-3.5 rounded-xl font-semibold text-slate-200 glass-card hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-lightbulb text-cyan-400"></i>
+                    <span>KREATHOS Initiative</span>
+                </a>
+            </div>
+
+            <!-- Quick Metrics Strip -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-cyan-500/20">
+                <div class="glass-card p-3.5 rounded-xl text-center glass-hover">
+                    <div class="font-display font-extrabold text-2xl lg:text-3xl text-cyan-300">15+</div>
+                    <div class="text-[11px] text-slate-400 uppercase font-medium mt-1">Campaigns Managed</div>
+                </div>
+                <div class="glass-card p-3.5 rounded-xl text-center glass-hover">
+                    <div class="font-display font-extrabold text-2xl lg:text-3xl text-sky-400">98%</div>
+                    <div class="text-[11px] text-slate-400 uppercase font-medium mt-1">Satisfaction Rate</div>
+                </div>
+                <div class="glass-card p-3.5 rounded-xl text-center glass-hover">
+                    <div class="font-display font-extrabold text-2xl lg:text-3xl text-cyan-300">100%</div>
+                    <div class="text-[11px] text-slate-400 uppercase font-medium mt-1">Target Engagement</div>
+                </div>
+            </div>
         </div>
-        
-        <!-- Subtitle/Label (Optional, kept from original design but smaller) -->
-        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 px-3 py-1 bg-slate-950/80 rounded-full text-cyan-300 text-[10px] font-bold uppercase tracking-wider border border-cyan-400/30 backdrop-blur-sm shadow-xl pointer-events-none group-hover:scale-105 transition-transform">
-            Digital Portrait
-        </div>
-    </div>
-</div>
 
-                            <!-- Corner Glow accents -->
-                            <div class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-cyan-400"></div>
-                            <div class="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-cyan-400"></div>
-                            <div class="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-cyan-400"></div>
-                            <div class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-cyan-400"></div>
-                        </div>
+        <!-- Hero Right: Photo Box -->
+        <div class="lg:col-span-5 flex justify-center">
+            <!-- Container Utama Foto (menggunakan relative agar badge positioning-nya pas) -->
+            <div class="relative w-full max-w-md aspect-[4/5] glass-card rounded-3xl p-4 glass-hover glow-border group">
+                
+                <!-- Frame Gambar -->
+                <div class="w-full h-full rounded-2xl border-2 border-cyan-400/30 bg-slate-900/60 flex items-center justify-center relative overflow-hidden group-hover:border-cyan-300 transition-colors">
+                    
+                    <!-- Gambar Fauzia -->
+                    <img 
+                        src="fauzia.png" 
+                        alt="Foto Fauzia" 
+                        class="absolute inset-0 w-full h-full object-cover object-top rounded-2xl"
+                        onerror="this.style.display='none';"
+                    />
 
-                        <!-- Floating Badge on Photo Box -->
-                        <div class="absolute -bottom-5 -right-3 glass-card px-4 py-2.5 rounded-2xl border-cyan-400/50 flex items-center gap-3 shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
-                            <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-cyan-300 flex items-center justify-center font-bold">
-                                <i class="fa-solid fa-award"></i>
-                            </div>
-                            <div class="flex flex-col text-left">
-                                <span class="text-xs font-bold text-slate-100">Creative Lead</span>
-                                <span class="text-[10px] text-cyan-300">Brand Strategy Expert</span>
-                            </div>
-                        </div>
+                    <!-- Ambient Light Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-sky-500/5 via-transparent to-cyan-500/10 opacity-30 group-hover:opacity-70 transition-opacity pointer-events-none rounded-2xl"></div>
+
+                    <!-- Corner Accents -->
+                    <div class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-cyan-400 opacity-70"></div>
+                    <div class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-cyan-400 opacity-70"></div>
+
+                    <!-- Label Digital Portrait -->
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-slate-950/80 rounded-full text-cyan-300 text-[10px] font-bold uppercase tracking-wider border border-cyan-400/30 backdrop-blur-sm shadow-xl pointer-events-none">
+                        Digital Portrait
+                    </div>
+                </div>
+
+                <!-- Floating Badge Creative Lead (posisi di pojok kanan bawah foto) -->
+                <div class="absolute -bottom-4 -right-2 glass-card px-4 py-2.5 rounded-2xl border border-cyan-400/50 flex items-center gap-3 shadow-[0_10px_25px_rgba(0,0,0,0.5)] z-10 bg-slate-900/90 backdrop-blur-md">
+                    <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-cyan-300 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <span class="text-xs font-bold text-slate-100">Creative Lead</span>
+                        <span class="text-[10px] text-cyan-300">Brand Strategy Expert</span>
                     </div>
                 </div>
 
             </div>
-        </section>
+        </div>
+
+    </div>
+</section>
 
         <!-- ABOUT ME SECTION -->
         <section id="about" class="py-20 px-4 lg:px-10 relative">
