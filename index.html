@@ -301,32 +301,50 @@
                     </div>
                 </div>
 
-                <!-- Hero Right: Photo Placeholder Box -->
-                <div class="lg:col-span-5 flex justify-center">
-                    <div class="relative w-full max-w-md aspect-[4/5] glass-card rounded-3xl p-4 glass-hover glow-border group">
-                        
-                        <!-- Inner Glowing Image Placeholder Frame -->
-                        <div class="w-full h-full rounded-2xl border-2 border-dashed border-cyan-400/50 bg-slate-900/60 flex flex-col items-center justify-center p-6 text-center relative overflow-hidden group-hover:border-cyan-300 transition-colors">
-                            
-                            <!-- Ambient Light Beam in Box -->
-                            <div class="absolute inset-0 bg-gradient-to-b from-sky-500/10 via-transparent to-cyan-500/10 opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                            
-                            <!-- Camera Icon with Pulse Ring -->
-                            <div class="w-20 h-20 rounded-2xl bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center text-cyan-300 mb-4 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all shadow-[0_0_20px_rgba(56,189,248,0.3)]">
-                                <i class="fa-solid fa-camera-retro text-3xl"></i>
-                            </div>
+                <!-- Hero Right: Photo Box (Updated with Image) -->
+<div class="lg:col-span-5 flex justify-center">
+    <div class="relative w-full max-w-md aspect-[4/5] glass-card rounded-3xl p-4 glass-hover glow-border group overflow-hidden">
+        
+        <!-- Frame Container for Image -->
+        <div class="w-full h-full rounded-2xl border-2 border-cyan-400/30 bg-slate-900/60 flex items-center justify-center relative overflow-hidden group-hover:border-cyan-300 transition-colors">
+            
+            <!-- Loading Indicator (Will hide after image loads) -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-slate-400 opacity-100 group-has-[img[src]]:opacity-0 transition-opacity">
+                 <div class="w-16 h-16 rounded-full border-4 border-slate-700 border-t-cyan-400 animate-spin mb-4"></div>
+                 <p class="font-mono text-xs">Memuat Foto Fauzia...</p>
+            </div>
 
-                            <span class="px-3 py-1 bg-cyan-500/20 rounded-full text-cyan-300 text-xs font-bold uppercase tracking-wider mb-2 border border-cyan-400/30">
-                                Portrait Photo Frame
-                            </span>
+            <!-- THE IMAGE: fauzia.png -->
+            <!-- We use object-cover to make sure the image fills the frame without distorting -->
+            <img 
+                src="fauzia.png" 
+                alt="Foto Fauzia" 
+                class="absolute inset-0 w-full h-full object-cover object-top rounded-2xl opacity-0 group-has-[img[src]]:opacity-100 transition-opacity duration-500"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
 
-                            <p class="font-mono text-xs text-slate-300 font-semibold max-w-xs leading-relaxed">
-                                [ GANTI DENGAN FOTO PORTRAIT NOORA ]
-                            </p>
+            <!-- Fallback Content (Displays if image fails to load) -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-red-400 hidden">
+                 <i class="fa-solid fa-image-slash text-4xl mb-3"></i>
+                 <p class="font-bold">Gagal Memuat Gambar</p>
+                 <p class="text-xs text-slate-400 mt-1">Pastikan file 'fauzia.png' berada di folder yang sama.</p>
+            </div>
 
-                            <p class="text-[11px] text-slate-400 mt-2 font-light">
-                                Disarankan foto profesional aspek 4:5 tinggi kualitas.
-                            </p>
+            <!-- Ambient Light Beam / Overlay (Kept from original design) -->
+            <div class="absolute inset-0 bg-gradient-to-b from-sky-500/5 via-transparent to-cyan-500/10 opacity-30 group-hover:opacity-70 transition-opacity pointer-events-none rounded-2xl"></div>
+
+            <!-- Optional Corner Decoration (Added for tech feel) -->
+            <div class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-cyan-400 opacity-70"></div>
+            <div class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-cyan-400 opacity-70"></div>
+        
+        </div>
+        
+        <!-- Subtitle/Label (Optional, kept from original design but smaller) -->
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 px-3 py-1 bg-slate-950/80 rounded-full text-cyan-300 text-[10px] font-bold uppercase tracking-wider border border-cyan-400/30 backdrop-blur-sm shadow-xl pointer-events-none group-hover:scale-105 transition-transform">
+            Digital Portrait
+        </div>
+    </div>
+</div>
 
                             <!-- Corner Glow accents -->
                             <div class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-cyan-400"></div>
